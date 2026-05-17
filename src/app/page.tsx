@@ -60,14 +60,6 @@ export default function Home() {
         <div className="absolute top-32 right-0 w-64 sm:w-96 h-64 sm:h-96 bg-purple-500/5 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative">
-          {/* Avatar + name */}
-          <div className="flex items-center gap-4 mb-6 sm:mb-8">
-            <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-blue-500/20 flex-shrink-0">
-              H
-            </div>
-            <p className="text-white font-semibold text-base sm:text-lg">Muhammad Hammad</p>
-          </div>
-
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-white mb-5 sm:mb-6 leading-[1.05]">
             I build things
             <br />
