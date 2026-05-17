@@ -13,8 +13,6 @@ export default function Home() {
           <a href="#" className="font-bold text-white tracking-tight text-lg">
             Hammad<span className="text-blue-400">.</span>
           </a>
-
-          {/* Desktop nav */}
           <nav className="hidden sm:flex items-center gap-6 text-sm text-slate-400">
             <a href="#work" className="hover:text-white transition-colors">Work</a>
             <a href="#stack" className="hover:text-white transition-colors">Stack</a>
@@ -23,8 +21,6 @@ export default function Home() {
               Hire me
             </a>
           </nav>
-
-          {/* Mobile hamburger */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="sm:hidden p-2 text-slate-400 hover:text-white transition-colors"
@@ -37,17 +33,13 @@ export default function Home() {
             )}
           </button>
         </div>
-
-        {/* Mobile menu */}
         {menuOpen && (
           <div className="sm:hidden border-t border-slate-800/50 bg-[#0a0a0b]/95 backdrop-blur-xl">
             <nav className="px-4 py-4 flex flex-col gap-3">
               <a href="#work" onClick={() => setMenuOpen(false)} className="text-slate-400 hover:text-white transition-colors py-1">Work</a>
               <a href="#stack" onClick={() => setMenuOpen(false)} className="text-slate-400 hover:text-white transition-colors py-1">Stack</a>
               <a href="https://github.com/hammadbtc" target="_blank" className="text-slate-400 hover:text-white transition-colors py-1">GitHub</a>
-              <a href="mailto:contact.hammadshk@gmail.com" className="inline-block w-fit px-5 py-2 bg-blue-500 text-white rounded-full text-sm font-medium hover:bg-blue-400 transition-colors mt-2">
-                Hire me
-              </a>
+              <a href="mailto:contact.hammadshk@gmail.com" className="inline-block w-fit px-5 py-2 bg-blue-500 text-white rounded-full text-sm font-medium hover:bg-blue-400 transition-colors mt-2">Hire me</a>
             </nav>
           </div>
         )}
@@ -55,7 +47,6 @@ export default function Home() {
 
       {/* Hero */}
       <section className="relative px-5 sm:px-6 pt-28 sm:pt-40 pb-20 sm:pb-28 max-w-4xl mx-auto overflow-hidden">
-        {/* Background glow */}
         <div className="absolute top-10 -left-20 w-56 sm:w-72 h-56 sm:h-72 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute top-32 right-0 w-64 sm:w-96 h-64 sm:h-96 bg-purple-500/5 rounded-full blur-3xl pointer-events-none" />
 
@@ -67,10 +58,14 @@ export default function Home() {
               that ship.
             </span>
           </h1>
-          <p className="text-base sm:text-lg text-slate-400 max-w-xl leading-relaxed mb-8 sm:mb-10">
-            Full-stack developer with 3+ years building Web3 infrastructure,
-            automation tools, and production applications. I combine deep
-            technical work with AI-augmented workflows to deliver fast.
+          <p className="text-base sm:text-lg text-slate-400 max-w-xl leading-relaxed mb-2 sm:mb-3">
+            Self-taught builder with years in crypto and NFTs. I learned to code
+            by shipping real products — Discord bots, Web3 dashboards, multi-chain
+            minting infrastructure.
+          </p>
+          <p className="text-base text-slate-500 max-w-xl leading-relaxed mb-8 sm:mb-10">
+            I use AI-augmented development to move fast. Not a 10x engineer —
+            just someone who figures things out and gets them deployed.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <a
@@ -96,21 +91,21 @@ export default function Home() {
         <div className="flex items-center gap-3 mb-10 sm:mb-12">
           <div className="h-px flex-1 bg-slate-800" />
           <p className="font-mono text-xs text-slate-500 uppercase tracking-widest whitespace-nowrap">
-            Featured Work
+            What I&apos;ve Built
           </p>
           <div className="h-px flex-1 bg-slate-800" />
         </div>
         <div className="space-y-4 sm:space-y-6">
           <ProjectCard
             title="NFT Mint Bot"
-            description="Multi-chain NFT auto-minting platform with AES-256 encrypted wallet vault, FCFS sniping mode, Flashbots MEV protection, contract safety scanning, and real-time analytics dashboard. 7 mainnets + 4 testnets, 28 API routes, deployed on Railway."
+            description="Multi-chain NFT auto-minting platform with encrypted wallet vault, FCFS sniping, Flashbots MEV protection, contract safety scanning, and real-time analytics. 7 mainnets + 4 testnets, 28 API routes, deployed and live."
             stack={["Next.js", "TypeScript", "ethers.js", "PostgreSQL", "Railway"]}
             href="https://github.com/hammadbtc/nft-mint-bot"
             featured
           />
           <ProjectCard
             title="Discord WL Checker Bot"
-            description="Automated whitelist verification bot with slash commands, modal-based user input, ephemeral results, spam protection, and wallet address validation."
+            description="Automated whitelist verification bot with slash commands, modal input, ephemeral results, spam protection, and wallet validation. Built for production community use."
             stack={["Discord.js v14", "Node.js"]}
             href="https://github.com/hammadbtc/Discord-wl-checker"
           />
@@ -133,7 +128,7 @@ export default function Home() {
         <div className="flex items-center gap-3 mb-10 sm:mb-12">
           <div className="h-px flex-1 bg-slate-800" />
           <p className="font-mono text-xs text-slate-500 uppercase tracking-widest whitespace-nowrap">
-            Tech Stack
+            Tech I Use
           </p>
           <div className="h-px flex-1 bg-slate-800" />
         </div>
@@ -142,7 +137,7 @@ export default function Home() {
             "TypeScript", "JavaScript", "Next.js", "React", "Node.js",
             "Tailwind CSS", "PostgreSQL", "Drizzle ORM", "ethers.js",
             "Flashbots", "REST APIs", "Railway", "Vercel", "Git",
-            "Discord.js", "AI-Augmented Dev", "HTML/CSS", "SQL",
+            "Discord.js", "AI-Assisted Dev", "HTML/CSS", "SQL",
           ].map((skill) => (
             <div
               key={skill}
@@ -159,7 +154,7 @@ export default function Home() {
         <div className="p-6 sm:p-10 rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-900/50 to-transparent">
           <h2 className="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-3">Let&apos;s work together</h2>
           <p className="text-slate-400 mb-6 sm:mb-8 max-w-md mx-auto text-sm sm:text-base">
-            Available for remote full-time or contract roles. Let&apos;s build something.
+            Open to entry-level remote roles, freelance gigs, and contract work. If you need someone who ships, let&apos;s talk.
           </p>
           <a
             href="mailto:contact.hammadshk@gmail.com"
