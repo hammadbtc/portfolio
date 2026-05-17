@@ -65,10 +65,7 @@ export default function Home() {
             <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-blue-500/20 flex-shrink-0">
               H
             </div>
-            <div>
-              <p className="text-white font-semibold text-base sm:text-lg">Muhammad Hammad</p>
-              <p className="text-slate-500 text-sm">Pakistan · Remote Worldwide</p>
-            </div>
+            <p className="text-white font-semibold text-base sm:text-lg">Muhammad Hammad</p>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-white mb-5 sm:mb-6 leading-[1.05]">
